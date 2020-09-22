@@ -5,7 +5,7 @@ import time
 import datetime
 alll=0
 duankou=''
-def changshi(ip,port):
+def changshi(ip,port):    #端口扫描函数
     socket.setdefaulttimeout(2)
     so=socket.socket(socket.AF_INET,socket.SOCK_STREAM)
     ip=ip
@@ -28,7 +28,7 @@ st=time.time()
 print(stt)
 port1=0
 port2=65535
-def shuru():
+def shuru(): #检查输入的端口是否合法
     try:
         port1=int(input('范围：'))
         port2=int(input('{}--'.format(port1)))
@@ -57,7 +57,7 @@ print('time:',(et-st),'s')
 
 sa=input('save?y/n:')
 if sa=='y':
-    with open('scanjieguoOK.txt', 'a') as f:
+    with open('scanjieguoOK.txt', 'a') as f:  #保存扫描到的端口
         f.write('all:')
         f.write(str(alll))
         f.write(' ')
