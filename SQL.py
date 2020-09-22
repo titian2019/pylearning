@@ -7,7 +7,7 @@ for i in range(20):
     if 'are in' in re.text:
         print(i)
         break
-char=list('qazxswedcrfvtgbyhnujmiklopWQAZXSEDCVFRTGBNHYUJMKIOPL1234567890')
+char=list('qazxswedcrfvtgbyhnujmiklopWQAZXSEDCVFRTGBNHYUJMKIOPL1234567890') #不忽略大小写，有问题可以删掉大写或者小写字母。没有加入特殊符号进行测试
 name1=''
 def name(i,n):
     global name1
