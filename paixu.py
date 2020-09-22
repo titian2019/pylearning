@@ -16,14 +16,14 @@ print(nu)
 nu1=[7,0,2,1,6]
 nu1=nu
 for i in   range(len(nu1)-1):
-    change = False
     for j in    range(len(nu1)-1-i):
+        change = False
         if nu1[j]>nu1[j+1]:
             nu1[j],nu1[j+1]=nu1[j+1],nu1[j]
             change = True
-    print(nu1)
-    if  change == False:
-        break   #但不用交换时，减少排序次数
+        if  change == False:
+            break   #但不用交换时，减少排序次数
+        print(nu1)
 #print(nu1)
 
 '''
