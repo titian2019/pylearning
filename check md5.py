@@ -1,8 +1,8 @@
 '''md5碰撞脚本 需要字典'''
 import hashlib
-src='6846860684f05029abccc09a53cd66f1'
+src='6846860684f05029abccc09a53cd66f1'  #修改为指定的md5值 默认为a111111的值
 def get_line():
-    f = open('1.txt') #默认mode=‘r’
+    f = open('1.txt') #默认mode=‘r’ #同目录下保存字典1.txt
     print( 'start:')
     while True:
         line = f.readline()
