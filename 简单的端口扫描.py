@@ -36,10 +36,10 @@ def shuru(): #检查输入的端口是否合法
     except ValueError as err:
         print(err)
         shuru()
-shuru()
+    return port1,port2
+port1,port2=shuru()
 if port2>port1:pass
 else:port1,port2=port2,port1
-
 print(port1,'--',port2)
 threads=[]
 a=input('go?:')
